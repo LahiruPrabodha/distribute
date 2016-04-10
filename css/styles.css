@@ -1,0 +1,35 @@
+/*index.html styles*/
+body{
+	font-family: 'Lato', sans-serif;
+	height: 100%;
+}
+
+h1,h2,h3{
+	font-family: 'Lato', sans-serif;
+}
+
+p{
+		font-family: 'Lato', sans-serif;
+}
+
+#wrapper{
+	margin-top: 5%;
+}
+#contentContainer{
+	font-family: 'Lato', sans-serif;
+	background-color: #ecf0f1;
+	height: 100%;
+}
+}
+
+#signupForm .input-group {
+    margin-bottom: 20px;
+}
+
+#nav_font{
+	font-family: 'Lato', sans-serif;
+}
+#footer_text{
+	margin-top: 5%;
+}
+
