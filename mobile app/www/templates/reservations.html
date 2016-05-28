@@ -1,0 +1,16 @@
+<ion-view view-title="My Reservations">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="table in tables">
+        <h2>{{table.tableType}}</h2>
+        <p>
+          Date: {{table.date| date: "yyyy-MM-dd"}}
+        </p>
+        <p>
+          Time: {{table.time}}
+        </p>
+        <ion-option-button class="button-assertive icon ion-trash-a" ng-click="deleteItem({{table.reserveID}})">Delete</ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

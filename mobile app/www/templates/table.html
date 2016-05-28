@@ -1,0 +1,38 @@
+<ion-view view-title="Browse">
+  <ion-content>
+    <div class="padding">
+      <h3>{{tables.tableType}}</h3>
+      <p>
+        Available: {{tables.availability}}
+      </p>
+    </div>
+
+    <div>
+      <div class="item item-divider">Select Date and Time</div>
+      <div class="item item-icon-left" ion-datetime-picker time am-pm ng-model="date.timeValue">
+          <i class="icon ion-ios-clock positive"></i>
+          Time:
+          <strong>{{date.timeValue| date: "H:mm: a"}}</strong>
+      </div>
+      <div class="item item-icon-left" ion-datetime-picker date ng-model="date.dateValue">
+         <i class="icon ion-ios-calendar positive"></i>
+         Date:
+         <strong>{{date.dateValue| date: "yyyy-MM-dd"}}</strong>
+     </div>
+     <div class="item">
+       <button class="button button-block button-positive" ng-click="book()" ng-disabled="tables.availability =='no'">Make Booking</button>
+     </div>
+      <!-- <form>
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">Date</span>
+            <ion-item ion-datetime-picker ng-model="datetimeValue">{{datetimeValue| date: "yyyy-mm-dd H:mm:ss"}}</ion-item>
+          </label>
+          <label class="item">
+            <button class="button button-block button-positive" type="submit">Make Booking</button>
+          </label>
+        </div>
+      </form> -->
+    </div>
+  </ion-content>
+</ion-view>

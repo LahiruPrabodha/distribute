@@ -1,0 +1,15 @@
+<ion-view view-title="Table List">
+  <ion-content>
+    <ion-list ng-if="tables != []">
+      <ion-item ng-repeat="table in tables" href="#app/table/{{table.tableID}}">
+        <h2>{{table.tableType}}</h2>
+        <p >Available:
+          <h4>{{table.availability}}</h4>
+        </p>
+      </ion-item>
+    </ion-list>
+    <div ng-if="tables == []">
+      <h2>Sorry! No data to display</h2>
+    </div>
+  </ion-content>
+</ion-view>
